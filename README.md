@@ -1,3 +1,17 @@
+# Download Voxceleb2
+conda create -n voxceleb_trainer python=3.8
+conda install --yes --file requirements.txt
+pip install -r requirements.txt
+conda activate voxceleb_trainer
+
+Make sure all the files you want to download are listed in files.txt and fileparts.txt
+(Might be found in finished.txt)
+
+python ./dataprep.py --save_path ******* --download --user ********** --password *********
+
+
+
+
 # VoxCeleb trainer
 
 This repository contains the framework for training speaker recognition models described in the paper '_In defence of metric learning for speaker recognition_' and '_Pushing the limits of raw waveform speaker recognition_'.
