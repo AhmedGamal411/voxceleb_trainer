@@ -1,0 +1,4 @@
+conda create -n voxceleb_trainer python=3.8
+conda install --yes --file requirements.txt
+conda activate voxceleb_trainer
+python ./dataprep.py --save_path /media/gamal/Passport/Datasets/Voxceleb2/ --download --user USER --password PASSWORD
